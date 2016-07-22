@@ -1,25 +1,162 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mI8-SQ-z1W">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--我的药盒-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="timeController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="timeController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJp-DR-Rbs" userLabel="After">
+                                <rect key="frame" x="218" y="475" width="91" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="N8h-Yf-qx3"/>
+                                    <constraint firstAttribute="height" constant="85" id="eN8-qr-0xn"/>
+                                </constraints>
+                                <state key="normal" image="后退图标.jpg"/>
+                                <connections>
+                                    <action selector="afterDayAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c6F-9n-cJL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2k-Xx-dhd" userLabel="Before">
+                                <rect key="frame" x="0.0" y="467" width="100" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="giW-0G-J4V"/>
+                                    <constraint firstAttribute="width" constant="100" id="sGC-Qs-ZRz"/>
+                                </constraints>
+                                <state key="normal" image="前进图标.jpeg"/>
+                                <connections>
+                                    <action selector="beforeDayAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ITv-Ky-7Sx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwo-dP-AbJ">
+                                <rect key="frame" x="82" y="503" width="156" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Fhw-t2-WDF"/>
+                                    <constraint firstAttribute="width" constant="156" id="iDE-Ds-5vC"/>
+                                </constraints>
+                                <state key="normal" title="选择时间"/>
+                                <connections>
+                                    <action selector="ShowRollerDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="afD-Np-Dhq"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zwo-dP-AbJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="82" id="4MS-ML-Kof"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TJp-DR-Rbs" secondAttribute="bottom" constant="8" id="Hhx-nF-uxF"/>
+                            <constraint firstAttribute="trailing" secondItem="Zwo-dP-AbJ" secondAttribute="trailing" constant="82" id="KeB-Ok-4Gl"/>
+                            <constraint firstAttribute="trailing" secondItem="TJp-DR-Rbs" secondAttribute="trailing" constant="11" id="TTk-Eb-hkf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="p2k-Xx-dhd" secondAttribute="bottom" id="V7K-1A-0OL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Zwo-dP-AbJ" secondAttribute="bottom" constant="35" id="nMF-4T-B2J"/>
+                            <constraint firstItem="p2k-Xx-dhd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wOo-Za-jHx"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="我的药盒" id="adW-uD-pIQ">
+                        <barButtonItem key="rightBarButtonItem" image="添加" id="yMW-sX-LHJ"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="afterButton" destination="TJp-DR-Rbs" id="DC6-gL-L9r"/>
+                        <outlet property="beforeButton" destination="p2k-Xx-dhd" id="lue-hT-wrC"/>
+                        <outlet property="timeButton" destination="Zwo-dP-AbJ" id="I1c-6l-NvW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1230" y="385"/>
+        </scene>
+        <!--Log In Register View Controller-->
+        <scene sceneID="Xnd-YZ-osy">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="USf-zX-oMV" customClass="LogInRegisterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tw8-K2-lvy"/>
+                        <viewControllerLayoutGuide type="bottom" id="pMy-nH-e7i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p3d-HY-w1N">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ovb-ne-DZz" userLabel="userPassword">
+                                <rect key="frame" x="81" y="188" width="158" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsz-85-d5G">
+                                <rect key="frame" x="89" y="263" width="30" height="30"/>
+                                <state key="normal" title="注册"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOq-Xe-8hT">
+                                <rect key="frame" x="201" y="263" width="30" height="30"/>
+                                <state key="normal" title="登录"/>
+                                <connections>
+                                    <action selector="LogInActin:" destination="USf-zX-oMV" eventType="touchUpInside" id="8R0-gl-gN4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="用户名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFf-6M-5C3">
+                                <rect key="frame" x="19" y="136" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBg-1D-sdV">
+                                <rect key="frame" x="36" y="191" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vo2-OH-cup" userLabel="userName">
+                                <rect key="frame" x="81" y="132" width="158" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VlO-q9-S2A"/>
+                    <connections>
+                        <outlet property="userName" destination="Vo2-OH-cup" id="vIX-Sx-R4U"/>
+                        <outlet property="userPassword" destination="ovb-ne-DZz" id="CyJ-Ts-WjX"/>
+                        <segue destination="BYZ-38-t0r" kind="push" id="PV0-Dy-yeL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z6T-Wh-QXY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="725" y="385"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bKz-Hd-AOL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mI8-SQ-z1W" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QjL-Yo-y5g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="USf-zX-oMV" kind="relationship" relationship="rootViewController" id="93h-UN-4iC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="miu-pW-eiw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="243" y="385"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="前进图标.jpeg" width="220" height="220"/>
+        <image name="后退图标.jpg" width="220" height="220"/>
+        <image name="添加" width="43" height="43"/>
+    </resources>
 </document>

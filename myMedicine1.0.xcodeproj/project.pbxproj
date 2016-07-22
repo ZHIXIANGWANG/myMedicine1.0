@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A540FF81D388D1E00C6BAB8 /* LogInRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A540FF71D388D1E00C6BAB8 /* LogInRegisterViewController.m */; };
+		7A540FFA1D38C41D00C6BAB8 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A540FF91D38C41D00C6BAB8 /* libsqlite3.0.tbd */; };
+		7A540FFD1D38E02F00C6BAB8 /* JRCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A540FFB1D38E02F00C6BAB8 /* JRCoreData.xcdatamodeld */; };
+		7A5F71391D362C4100E4833D /* 前进图标.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7A5F71371D362C4100E4833D /* 前进图标.jpeg */; };
+		7A5F713A1D362C4100E4833D /* 后退图标.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A5F71381D362C4100E4833D /* 后退图标.jpg */; };
+		7A5F713D1D362E1400E4833D /* timeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5F713C1D362E1400E4833D /* timeController.m */; };
 		7ABB6DB01D362A0D00E6071E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB6DAF1D362A0D00E6071E /* main.m */; };
 		7ABB6DB31D362A0D00E6071E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB6DB21D362A0D00E6071E /* AppDelegate.m */; };
 		7ABB6DB61D362A0D00E6071E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB6DB51D362A0D00E6071E /* ViewController.m */; };
@@ -15,6 +21,7 @@
 		7ABB6DBE1D362A0D00E6071E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ABB6DBC1D362A0D00E6071E /* LaunchScreen.storyboard */; };
 		7ABB6DC91D362A0D00E6071E /* myMedicine1_0Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB6DC81D362A0D00E6071E /* myMedicine1_0Tests.m */; };
 		7ABB6DD41D362A0D00E6071E /* myMedicine1_0UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB6DD31D362A0D00E6071E /* myMedicine1_0UITests.m */; };
+		977EE96CC0E3FD6F824F5BA9 /* Pods_myMedicine1_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E2CD39AF842B1DF81F6F8E /* Pods_myMedicine1_0.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E6731800B96B8294F28B577 /* Pods-myMedicine1.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myMedicine1.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myMedicine1.0/Pods-myMedicine1.0.debug.xcconfig"; sourceTree = "<group>"; };
+		7A540FF61D388D1E00C6BAB8 /* LogInRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInRegisterViewController.h; sourceTree = "<group>"; };
+		7A540FF71D388D1E00C6BAB8 /* LogInRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInRegisterViewController.m; sourceTree = "<group>"; };
+		7A540FF91D38C41D00C6BAB8 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		7A540FFC1D38E02F00C6BAB8 /* JRCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JRCoreData.xcdatamodel; sourceTree = "<group>"; };
+		7A5F71371D362C4100E4833D /* 前进图标.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "前进图标.jpeg"; sourceTree = "<group>"; };
+		7A5F71381D362C4100E4833D /* 后退图标.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "后退图标.jpg"; sourceTree = "<group>"; };
+		7A5F713B1D362E1400E4833D /* timeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timeController.h; sourceTree = "<group>"; };
+		7A5F713C1D362E1400E4833D /* timeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = timeController.m; sourceTree = "<group>"; };
 		7ABB6DAB1D362A0C00E6071E /* myMedicine1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myMedicine1.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ABB6DAF1D362A0D00E6071E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7ABB6DB11D362A0D00E6071E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +67,8 @@
 		7ABB6DCF1D362A0D00E6071E /* myMedicine1.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myMedicine1.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ABB6DD31D362A0D00E6071E /* myMedicine1_0UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myMedicine1_0UITests.m; sourceTree = "<group>"; };
 		7ABB6DD51D362A0D00E6071E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D77F1DBA693D68446585A7AE /* Pods-myMedicine1.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myMedicine1.0.release.xcconfig"; path = "Pods/Target Support Files/Pods-myMedicine1.0/Pods-myMedicine1.0.release.xcconfig"; sourceTree = "<group>"; };
+		F0E2CD39AF842B1DF81F6F8E /* Pods_myMedicine1_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myMedicine1_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A540FFA1D38C41D00C6BAB8 /* libsqlite3.0.tbd in Frameworks */,
+				977EE96CC0E3FD6F824F5BA9 /* Pods_myMedicine1_0.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +98,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56C52EC07C0C1518302062A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A540FF91D38C41D00C6BAB8 /* libsqlite3.0.tbd */,
+				F0E2CD39AF842B1DF81F6F8E /* Pods_myMedicine1_0.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A5F71341D362C0800E4833D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7A5F713B1D362E1400E4833D /* timeController.h */,
+				7A5F713C1D362E1400E4833D /* timeController.m */,
+				7A540FF61D388D1E00C6BAB8 /* LogInRegisterViewController.h */,
+				7A540FF71D388D1E00C6BAB8 /* LogInRegisterViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7A5F71351D362C0800E4833D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7A5F71361D362C0800E4833D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		7ABB6DA21D362A0C00E6071E = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +139,8 @@
 				7ABB6DC71D362A0D00E6071E /* myMedicine1.0Tests */,
 				7ABB6DD21D362A0D00E6071E /* myMedicine1.0UITests */,
 				7ABB6DAC1D362A0C00E6071E /* Products */,
+				C72FAC63EF67D46F57A12E3D /* Pods */,
+				56C52EC07C0C1518302062A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +157,21 @@
 		7ABB6DAD1D362A0D00E6071E /* myMedicine1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				7A5F71341D362C0800E4833D /* Controller */,
+				7A5F71351D362C0800E4833D /* Model */,
+				7A5F71361D362C0800E4833D /* View */,
 				7ABB6DB11D362A0D00E6071E /* AppDelegate.h */,
 				7ABB6DB21D362A0D00E6071E /* AppDelegate.m */,
 				7ABB6DB41D362A0D00E6071E /* ViewController.h */,
 				7ABB6DB51D362A0D00E6071E /* ViewController.m */,
 				7ABB6DB71D362A0D00E6071E /* Main.storyboard */,
 				7ABB6DBA1D362A0D00E6071E /* Assets.xcassets */,
+				7A5F71371D362C4100E4833D /* 前进图标.jpeg */,
+				7A5F71381D362C4100E4833D /* 后退图标.jpg */,
 				7ABB6DBC1D362A0D00E6071E /* LaunchScreen.storyboard */,
 				7ABB6DBF1D362A0D00E6071E /* Info.plist */,
 				7ABB6DAE1D362A0D00E6071E /* Supporting Files */,
+				7A540FFB1D38E02F00C6BAB8 /* JRCoreData.xcdatamodeld */,
 			);
 			path = myMedicine1.0;
 			sourceTree = "<group>";
@@ -140,6 +202,15 @@
 			path = myMedicine1.0UITests;
 			sourceTree = "<group>";
 		};
+		C72FAC63EF67D46F57A12E3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E6731800B96B8294F28B577 /* Pods-myMedicine1.0.debug.xcconfig */,
+				D77F1DBA693D68446585A7AE /* Pods-myMedicine1.0.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +218,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7ABB6DD81D362A0D00E6071E /* Build configuration list for PBXNativeTarget "myMedicine1.0" */;
 			buildPhases = (
+				0485E5294FC662AD5244D030 /* [CP] Check Pods Manifest.lock */,
 				7ABB6DA71D362A0C00E6071E /* Sources */,
 				7ABB6DA81D362A0C00E6071E /* Frameworks */,
 				7ABB6DA91D362A0C00E6071E /* Resources */,
+				6401B3D81979603D3D07CC30 /* [CP] Embed Pods Frameworks */,
+				1454B0525E52D50504895B59 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,7 +318,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ABB6DBE1D362A0D00E6071E /* LaunchScreen.storyboard in Resources */,
+				7A5F713A1D362C4100E4833D /* 后退图标.jpg in Resources */,
 				7ABB6DBB1D362A0D00E6071E /* Assets.xcassets in Resources */,
+				7A5F71391D362C4100E4833D /* 前进图标.jpeg in Resources */,
 				7ABB6DB91D362A0D00E6071E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,14 +341,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0485E5294FC662AD5244D030 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1454B0525E52D50504895B59 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myMedicine1.0/Pods-myMedicine1.0-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6401B3D81979603D3D07CC30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myMedicine1.0/Pods-myMedicine1.0-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7ABB6DA71D362A0C00E6071E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A540FF81D388D1E00C6BAB8 /* LogInRegisterViewController.m in Sources */,
 				7ABB6DB61D362A0D00E6071E /* ViewController.m in Sources */,
 				7ABB6DB31D362A0D00E6071E /* AppDelegate.m in Sources */,
+				7A5F713D1D362E1400E4833D /* timeController.m in Sources */,
 				7ABB6DB01D362A0D00E6071E /* main.m in Sources */,
+				7A540FFD1D38E02F00C6BAB8 /* JRCoreData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,23 +538,29 @@
 		};
 		7ABB6DD91D362A0D00E6071E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E6731800B96B8294F28B577 /* Pods-myMedicine1.0.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = myMedicine1.0/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.microi.myMedicine1-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		7ABB6DDA1D362A0D00E6071E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D77F1DBA693D68446585A7AE /* Pods-myMedicine1.0.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = myMedicine1.0/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.microi.myMedicine1-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -496,6 +629,7 @@
 				7ABB6DDA1D362A0D00E6071E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7ABB6DDB1D362A0D00E6071E /* Build configuration list for PBXNativeTarget "myMedicine1.0Tests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +638,7 @@
 				7ABB6DDD1D362A0D00E6071E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7ABB6DDE1D362A0D00E6071E /* Build configuration list for PBXNativeTarget "myMedicine1.0UITests" */ = {
 			isa = XCConfigurationList;
@@ -512,8 +647,22 @@
 				7ABB6DE01D362A0D00E6071E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7A540FFB1D38E02F00C6BAB8 /* JRCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7A540FFC1D38E02F00C6BAB8 /* JRCoreData.xcdatamodel */,
+			);
+			currentVersion = 7A540FFC1D38E02F00C6BAB8 /* JRCoreData.xcdatamodel */;
+			path = JRCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7ABB6DA31D362A0C00E6071E /* Project object */;
 }
